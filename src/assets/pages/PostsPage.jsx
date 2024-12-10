@@ -11,3 +11,14 @@ function fetchPosts() {
         .then((data) => setPosts(data))
         .catch((err) => console.error(err));
 }
+
+useEffect(() => {
+    fetchPosts();
+}, []);
+
+return (
+    <div className="row gap-2">
+        {posts
+            .filter((post) => post.isPublic)
+
+        }
