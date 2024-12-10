@@ -5,4 +5,9 @@ export default function PostsPage() {
     const indexUrl = import.meta.env.VITE_POSTS_INDEX;
 }
 
-function fetchPosts()
+function fetchPosts() {
+    fetch(indexUrl)
+        .then((res) => res.json())
+        .then((data) => setPosts(data))
+        .catch((err) => console.error(err));
+}
