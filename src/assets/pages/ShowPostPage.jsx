@@ -8,5 +8,7 @@ export default function ShowPostPage() {
     const indexUrl = import.meta.env.VITE_POSTS_INDEX;
     function fetchPost(postId) {
         fetch(indexUrl + `/${postId}`)
+            .then((res) => res.json())
+            .then((data) => setPost(data));
     }
 }
