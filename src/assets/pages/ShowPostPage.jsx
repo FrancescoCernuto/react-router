@@ -11,4 +11,10 @@ export default function ShowPostPage() {
             .then((res) => res.json())
             .then((data) => setPost(data));
     }
+
+    useEffect(() => {
+        fetchPost(postId);
+    }, []);
+
 }
+return ()
