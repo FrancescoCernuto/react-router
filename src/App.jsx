@@ -3,6 +3,8 @@ import HomePage from "./assets/pages/HomePage";
 import AboutUsPage from "./assets/pages/AboutUsPage";
 import PostsPage from "./assets/pages/PostsPage";
 import defaultLayout from "./assets/layout/DefaultLayout";
+import ShowPostPage from "./assets/pages/ShowPostPage";
+
 
 export default function App() {
   return (
